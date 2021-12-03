@@ -1,0 +1,16 @@
+label{
+    padding: 1em 0;
+}
+input{
+    width:100%;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+}
+.submitBtn{
+    width: 50%;
+    margin-top: 1em;
+    padding: .5em;
+}
