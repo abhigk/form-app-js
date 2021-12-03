@@ -11,6 +11,8 @@ var _react = require("react");
 
 require("./nameForm.style.css");
 
+var _jsxRuntime = require("react/jsx-runtime");
+
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -33,28 +35,37 @@ function NameForm(props) {
     props.whenSubmit(inputs);
   };
 
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("form", {
-    onSubmit: handleSubmit,
-    className: "mainForm"
-  }, /*#__PURE__*/React.createElement("label", null, "Super Balance: "), /*#__PURE__*/React.createElement("input", {
-    type: "number",
-    name: "superbalnce",
-    value: inputs.superbalnce || "",
-    onChange: handleChange
-  }), /*#__PURE__*/React.createElement("label", null, "Retirement Age: "), /*#__PURE__*/React.createElement("input", {
-    type: "number",
-    name: "retirementAge",
-    value: inputs.retirementAge || "",
-    onChange: handleChange
-  }), /*#__PURE__*/React.createElement("label", null, "Target Age:"), /*#__PURE__*/React.createElement("input", {
-    type: "number",
-    name: "targetAge",
-    value: inputs.targetAge || "",
-    onChange: handleChange
-  }), /*#__PURE__*/React.createElement("input", {
-    type: "submit",
-    className: "submitBtn"
-  })));
+  return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
+    children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("form", {
+      onSubmit: handleSubmit,
+      className: "mainForm",
+      children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+        children: "Super Balance: "
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "number",
+        name: "superbalnce",
+        value: inputs.superbalnce || "",
+        onChange: handleChange
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+        children: "Retirement Age: "
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "number",
+        name: "retirementAge",
+        value: inputs.retirementAge || "",
+        onChange: handleChange
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("label", {
+        children: "Target Age:"
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "number",
+        name: "targetAge",
+        value: inputs.targetAge || "",
+        onChange: handleChange
+      }), /*#__PURE__*/(0, _jsxRuntime.jsx)("input", {
+        type: "submit",
+        className: "submitBtn"
+      })]
+    })
+  });
 }
 
 var _default = NameForm;
